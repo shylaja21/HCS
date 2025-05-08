@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HealthyLife Checkups</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #212121;
+    }
+
+    header {
+      background-color: #2e7d32;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .services {
+      background-color: #e8f5e9;
+    }
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 250px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .tips {
+      background-color: #f1f8e9;
+    }
+
+    .tips ul {
+      max-width: 600px;
+      margin: auto;
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    .contact {
+      background-color: #e8f5e9;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 600px) {
+      .service-list {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>HealthyLife Checkups</h1>
+  <p>Regular checkups for a healthier tomorrow 🌱</p>
+</header>
+
+<section class="services">
+  <h2 style="text-align:center; color:#2e7d32;">Our Health Checkup Services</h2>
+  <div class="service-list">
+    <div class="card">
+      <h3>General Checkup</h3>
+      <p>Monitor blood pressure, sugar levels, BMI and overall physical health.</p>
+    </div>
+    <div class="card">
+      <h3>Cardiac Screening</h3>
+      <p>Includes ECG, cholesterol profile, and heart risk assessments.</p>
+    </div>
+    <div class="card">
+      <h3>Dental Checkup</h3>
+      <p>Prevent cavities, gum disease, and maintain oral hygiene.</p>
+    </div>
+    <div class="card">
+      <h3>Vision & Eye Care</h3>
+      <p>Eye pressure, vision testing, and optical consultation.</p>
+    </div>
+    <div class="card">
+      <h3>Women's Health</h3>
+      <p>Pap smear, breast exam, and reproductive health evaluation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="tips">
+  <h2 style="text-align:center; color:#2e7d32;">Healthy Living Tips</h2>
+  <ul>
+    <li>Schedule a health checkup every 6 to 12 months.</li>
+    <li>Stay active – aim for 30 minutes of daily exercise.</li>
+    <li>Eat a balanced diet with fruits, veggies, and whole grains.</li>
+    <li>Limit sugar, salt, and saturated fats in your meals.</li>
+    <li>Stay hydrated and get 7–8 hours of sleep every night.</li>
+  </ul>
+</section>
+
+<section class="contact">
+  <h2 style="color:#2e7d32;">Book Your Appointment</h2>
+  <p>📧 Email: checkups@healthylife.com</p>
+  <p>📞 Phone: +123 456 7890</p>
+</section>
+
+<footer>
+  &copy; 2025 HealthyLife. All rights reserved.
+</footer>
+
+</body>
+</html>

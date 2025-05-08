@@ -1,0 +1,309 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #4facfe, #00f2fe);
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Logo Base Style */
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #fff; /* Base color before glow */
+}
+
+/* Apply sparkle and neon glow animation */
+.sparkle {
+    display: inline-block;
+    animation: sparkleColors 2.5s infinite alternate ease-in-out, neonGlow 1.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF5733, 0 0 30px #FF5733, 0 0 40px #FF5733, 0 0 50px #FF5733, 0 0 75px #FF5733;
+}
+
+/* Optional: stagger each letter's animation for a twinkling effect */
+.sparkle.h {
+    animation-delay: 0s;
+}
+
+.sparkle.c {
+    animation-delay: 0.4s;
+}
+
+.sparkle.s {
+    animation-delay: 0.8s;
+}
+
+/* Keyframes for color-changing sparkle */
+@keyframes sparkleColors {
+    0%   { color: #FF5733; }   /* Orange-red */
+    25%  { color: #33B5FF; }   /* Sky blue */
+    50%  { color: #28A745; }   /* Green */
+    75%  { color: #FFC107; }   /* Gold */
+    100% { color: #E91E63; }   /* Pink */
+}
+
+/* Neon glow animation effect */
+@keyframes neonGlow {
+    0%   { text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #FF5733, 0 0 30px #FF5733, 0 0 40px #FF5733, 0 0 50px #FF5733, 0 0 75px #FF5733; }
+    50%  { text-shadow: 0 0 10px #fff, 0 0 20px #33B5FF, 0 0 30px #33B5FF, 0 0 40px #33B5FF, 0 0 50px #33B5FF, 0 0 75px #33B5FF; }
+    100% { text-shadow: 0 0 15px #fff, 0 0 25px #28A745, 0 0 35px #28A745, 0 0 45px #28A745, 0 0 55px #28A745, 0 0 75px #28A745; }
+}
+
+
+
+
+
+/* General Menu Styles */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+    border-radius: 5px;
+    position: relative; /* Position to keep for any future effects */
+    font-weight: bold;
+    background: -webkit-linear-gradient(45deg, #FF5733, #33B5FF, #28A745, #FFEB3B);
+    -webkit-background-clip: text;  /* Clip the background to the text */
+    color: transparent;  /* Make the text color transparent, allowing the gradient to show */
+    transition: color 0.5s ease;
+}
+
+/* Optional: On hover change text color for extra effect */
+.menu ul li a:hover {
+    color: white; /* Change to white or any color of your choice */
+}
+
+
+
+/* Search Bar */
+.search .srch {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* Main Content Area */
+.content {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 90%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.section h1, .section h2, .section h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Hide all images by default */
+.slideshow-image {
+    display: none;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  /* Fade in effect */
+  .fade {
+    animation: fade 2s ease-in-out infinite;
+  }
+  
+  /* Keyframes for fading effect */
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+/* Buttons */
+button,
+.cn a {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+button:hover,
+.cn a:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+}
+
+/* Custom Email Button */
+.email-btn {
+    background-color: #28a745; /* Green */
+    font-weight: bold;
+}
+
+.email-btn:hover {
+    background-color: #218838;
+}
+
+/* Login/Registration Forms */
+.login-form input,
+#register-form input,
+#register-form select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.login-form,
+#register-form {
+    background-color: #f4f6f8;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+/* Services Icons */
+.service-item {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    background: #e3f2fd;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    background: #bbdefb;
+}
+
+.service-icon {
+    font-size: 40px;
+    color: #2196f3;
+    margin-bottom: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu ul li a {
+        width: 100%;
+        display: block;
+    }
+}
+.doctor {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.doctor h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.doctor img {
+    width: 150px; /* Adjust image size */
+    height: auto;
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px;
+}
+
+.book-appointment {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.book-appointment:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* Slide-in Animation for Home Heading */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animated-heading {
+    animation: slideInLeft 1s ease-out;
+    font-size: 50px;
+    color: white;
+    margin-top: 50px;
+    text-align: left;
+    padding-left: 50px;
+}

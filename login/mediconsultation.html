@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medical Consultation Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #555;
+    }
+
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .message {
+      margin-top: 20px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Get Expert Medical Advice</h2>
+  <form id="medicalForm">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" required>
+
+    <label for="doctor">Select a Doctor</label>
+    <select id="doctor" required>
+      <option value="">-- Select Doctor --</option>
+      <option value="660d7b999999999999aabbcc">Dr. Ashok</option>
+      <option value="660d7c888888888888ddeeff">Dr. malleshwari</option>
+    </select>
+
+    <label for="symptoms">Describe Your Symptoms</label>
+    <textarea id="symptoms" rows="5" placeholder="E.g. I have a fever and headache..." required></textarea>
+
+    <button type="submit">Submit Consultation</button>
+  </form>
+
+  <div class="message" id="formMessage"></div>
+</div>
+
+<script>
+  document.getElementById('medicalForm').addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const doctorId = document.getElementById('doctor').value;
+    const symptoms = document.getElementById('symptoms').value;
+
+    // Simulate user ID (normally you'd get this from authentication)
+    const userId = "660d1234567890abcdef1234";
+
+    const payload = {
+      userId: userId,
+      doctorId: doctorId,
+      symptoms: symptoms
+    };
+
+    try {
+      const res = await fetch("http://localhost:3000/consult", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        document.getElementById("formMessage").textContent = "Consultation submitted successfully!";
+        document.getElementById("medicalForm").reset();
+      } else {
+        document.getElementById("formMessage").textContent = data.message || "Something went wrong!";
+      }
+    } catch (error) {
+      console.error("Error submitting consultation:", error);
+      document.getElementById("formMessage").textContent = "Server error. Please try again later.";
+    }
+  });
+</script>
+
+</body>
+</html>

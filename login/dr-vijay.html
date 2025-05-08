@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment with Dr. Vijay</title>
+    <link rel="stylesheet" href="appointments.css"> <!-- Shared CSS -->
+</head>
+<body>
+    <div class="appointment-container">
+        <h2>Book an Appointment with Dr. Vijay</h2>
+        <div class="appointment-form">
+            <h3>Appointment Form - Dr. Vijay (Cardiologist)</h3>
+            <form action="confirmation.html" method="GET">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="date">Preferred Appointment Date</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Preferred Appointment Time</label>
+                <input type="time" id="time" name="time" required>
+                
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

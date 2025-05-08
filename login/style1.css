@@ -1,0 +1,1285 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #009688;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header .navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+section.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #e0f7fa;
+}
+
+section.home .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+section.home .content {
+  max-width: 500px;
+}
+
+section.home .content h3 {
+  font-size: 2rem;
+  color: #00796b;
+}
+
+section.home .content p {
+  font-size: 1rem;
+  margin: 10px 0 20px;
+}
+
+section.home .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+section.icons-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: #f1f8e9;
+}
+
+section.icons-container .icons {
+  text-align: center;
+}
+
+section.icons-container .icons i {
+  font-size: 2rem;
+  color: #388e3c;
+}
+
+section.services, section.about {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services .box-container, section.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box, section.about .image {
+  background: #e0f2f1;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i, section.about .image img {
+  font-size: 3rem;
+  color: #00796b;
+}
+
+section.services .box h3 {
+  margin: 10px 0;
+  color: #004d40;
+}
+
+section.services .btn {
+  background: #004d40;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+h1.heading {
+  text-align: center;
+  color: #004d40;
+  margin-bottom: 30px;
+}
+
+h1.heading span {
+  color: #00796b;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #009688;
+  color: white;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styling */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #00bcd4;
+  color: white;
+}
+
+header .logo {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header .navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+header #menu-btn {
+  display: none;
+}
+
+/* Home Section */
+section.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #e1f5fe;
+}
+
+section.home .image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+section.home .content h3 {
+  font-size: 2.5rem;
+  color: #0288d1;
+}
+
+section.home .content p {
+  margin: 20px 0;
+  color: #555;
+}
+
+section.home .btn {
+  display: inline-block;
+  background: #0288d1;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Icons Section */
+section.icons-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: #e3f2fd;
+}
+
+section.icons-container .icons {
+  text-align: center;
+  flex: 1;
+  margin: 0 10px;
+}
+
+section.icons-container .icons i {
+  font-size: 3rem;
+  color: #01579b;
+}
+
+section.icons-container .icons h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+section.icons-container .icons p {
+  color: #666;
+}
+
+/* Services Section */
+section.services {
+  padding: 50px;
+  background: #fff;
+}
+
+section.services h1.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0288d1;
+}
+
+section.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.services .box {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+section.services .box i {
+  font-size: 2.5rem;
+  color: #0288d1;
+  margin-bottom: 10px;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #00bcd4;
+  color: white;
+}
+

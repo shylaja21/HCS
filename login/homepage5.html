@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Solutions</title>
+    <link rel="stylesheet" href="abc.css">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-image: url('doctor1.jpg');
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .doctor-card {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .doctor-card h3 {
+            margin: 10px 0;
+        }
+
+        .appointment-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .appointment-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h1 class="logo">
+                    <span class="sparkle h">H</span>
+                    <span class="sparkle c">c</span>
+                    <span class="sparkle s">S</span>
+                </h1>
+                
+            </div>
+    
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#" onclick="showSection('home')">HOME</a></li>
+                    <li><a href="#" onclick="showSection('about')">ABOUT</a></li>
+                    <li><a href="#" onclick="showSection('services')">SERVICES</a></li>
+                    <li><a href="#" onclick="showSection('doctors')">DOCTORS</a></li>
+                    <li><a href="#" onclick="showSection('contact')">CONTACT</a></li>
+                    <li><a href="#" onclick="showloginmodal()">LOGIN</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Search">
+            </div>
+        </div>
+
+        <div class="content">
+<!-- Home Section -->
+<div id="home" class="section" style="display:none;">
+    <h1 class="animated-heading">Health Care Solutions</h1>
+    <p style="color:white; font-size:18px;">
+        Your health is our top priority. We provide the best health care services to keep you safe and healthy.
+    </p>
+    <div class="slideshow-container"style="margin-top: 20px; width: 100%; max-width: 1000px; display: flex; justify-content: center;">
+    
+    <img class="slideshow-image fade" src="images/image.jpg" alt="Health Care Image" style="width:100%; display:none;">
+    <img class="slideshow-image fade" src="images/doctor1.jpg" alt="Health Care Image" style="width:100%; display:none;">
+    <img class="slideshow-image fade" src="images/doctor2.jpg" alt="Health Care Image" style="width:100%; display:none;">
+    </div>
+
+       <!-- ✅ Slideshow script goes here -->
+  <script>
+    let slideIndex = 0;
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("slideshow-image");
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    showSlides();
+  </script>
+
+
+
+    <br><br>
+    <button class="cn"><a href="join us.html" style="color:white;">JOIN US</a></button>
+</div>
+
+
+
+<!-- ✅ Add this at the very bottom of your HTML, before </body> -->
+<script>
+  window.onload = function() {
+    document.getElementById("home").style.display = "block";
+  };
+</script>
+
+<!-- Add this CSS for the animation -->
+<style>
+    .animated-heading {
+      white-space: nowrap; /* Prevents the text from wrapping */
+      overflow: hidden; /* Hides any overflow */
+      display: inline-block; /* Makes the text behave like a block */
+      animation: slideRightToLeft 10s linear infinite; /* Animates the heading */
+      font-size: 48px; /* You can adjust this size */
+      color: #00ffff; /* Cyan neon glow */
+      text-shadow:
+        0 0 5px #ff00d0,
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 40px rgb(0, 128, 255),
+        0 0 80px #0ff;
+      font-weight: bold;
+      animation: slideRightToLeft 10s linear infinite;
+    }
+  
+    @keyframes slideRightToLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  
+
+
+
+
+            <!-- About Section -->
+            <div id="about" class="section" style="display:none;">
+                <h2>About Us</h2>
+                <p>We are dedicated to providing reliable health care solutions. Our goal is to offer high-quality care, personalized treatment, and a caring experience for every patient.</p>
+                <p>Our team consists of experienced professionals who are committed to your well-being. We offer a wide range of health services, from preventative care to specialized treatments.</p>
+                <img src="images/image2.jpg" alt="About Us" class="section-image">
+            </div>
+
+            <!-- Services Section -->
+<div id="services" class="section" style="display:none;">
+    <h2 style="text-align:center;">Our Services</h2>
+    <div class="service-item">
+        <a href="mediconsultation.html" style="text-decoration: none; color: inherit;">
+            <i class="service-icon fas fa-stethoscope"></i>
+            <h3 style="text-align:center;">Medical Consultation</h3>
+            <p style="text-align:center;">Get expert advice from certified doctors.</p>
+        </a>
+    </div>
+
+    <div class="service-item">
+        <a href="pharmacy.html" style="text-decoration: none; color: inherit;">
+        <i class="service-icon fas fa-pills"></i>
+        <h3 style="text-align:center;">Pharmacy</h3>
+        <p style="text-align:center;">Access a variety of medications and prescriptions.</p>
+    </div>
+
+    <div class="service-item">
+        <a href="healthcheckup.html" style="text-decoration: none; color: inherit;">
+        <i class="service-icon fas fa-heartbeat"></i>
+        <h3 style="text-align:center;">Health Checkups</h3>
+        <p style="text-align:center;">Regular health checkups for a healthy life.</p>
+    </div>
+</div>
+
+
+<!-- Doctors Section -->
+<div id="doctors" class="section" style="display:none;">
+    <h2>Our Doctors</h2>
+    <p>Our team of qualified doctors is dedicated to providing you with personalized care. With years of experience and a commitment to excellence, our doctors are here to ensure your health and safety.</p>
+    <p>Our doctors specialize in various fields, including general medicine, cardiology, dermatology, and more. You can trust our team to provide the best possible care.</p>
+
+    <!-- Doctor Cards with Appointment Button -->
+    <div class="doctor-card">
+        <h3>Dr. vijay (Dermatologist)</h3>
+        <img src="images/doctor2.jpg" alt="Dr. Anu" class="section-image" width="200">
+        <br><br>
+        <!-- Link to Dr. Anu's Appointment Page -->
+        <a href="dr-anu.html"><button class="appointment-btn">Book Appointment</button></a>
+    </div>
+
+    <div class="doctor-card">
+        <h3>Dr. anu (Cardiologist)</h3>
+        <img src="images/doctor1.jpg" alt="Dr. Vijay" class="section-image" width="200">
+        <br><br>
+        <!-- Link to Dr. Vijay's Appointment Page -->
+        <a href="dr-vijay.html"><button class="appointment-btn">Book Appointment</button></a>
+    </div>
+</div>
+            <!-- Contact Section -->
+            <div id="contact" class="section" style="display:none;">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or need assistance, feel free to contact us. We're here to help!</p>
+                <p>Email: <a href="mailto:shylajachinthala862@gmail.com">shylajachinthala862@gmail.com</a></p>
+                <p>Phone: 8341891980</p>
+                <img src="images/contact.jpg" alt="Contact Us" class="section-image">
+            </div>
+
+
+        </body>
+        </html>
